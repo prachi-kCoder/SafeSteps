@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # Importing the dataset
-dataset = pd.read_csv('crime.csv')
+dataset = pd.read_csv('../data/crime.csv')
 X = dataset.iloc[0:166, 0].values
 y1 = dataset.iloc[:, 10].values
 y2 = dataset.iloc[:, 11].values
@@ -87,4 +87,3 @@ for i in range(0, 166):
         }
     ar.append(o)
 print(ar)
-'''
